@@ -1,3 +1,17 @@
 body {
-  background: orange;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.pulsate {
+  animation-name: pulse;
+  animation-duration: 0.4s;
+  animation-iteration-count: 5;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 1px 15px rgba(104, 211, 145, 0.6);
+  }
 }
